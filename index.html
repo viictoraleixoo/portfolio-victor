@@ -29,7 +29,7 @@
             if (index < texto.length) {
               document.getElementById("titulo-principal").innerHTML += texto.charAt(index);
               index++;
-              setTimeout(escrever, 100); // Velocidade da digitação (90ms por letra)
+              setTimeout(escrever, 100); 
             }
           }
         
@@ -112,7 +112,6 @@
       </form>
   </section>
   
-  <!-- FOOTER FORA DO FORMULÁRIO -->
   <footer class="rodape">
     <div class="rodape-container">
       <p><strong>📞 Telefone:</strong> <a href="tel:+5511965765717">(11) 96576-5717</a></p>
@@ -125,7 +124,7 @@
   <p class="assinatura">🚀 Desenvolvido por Victor Aleixo • 2025</p>
 
   <script>
-    // Envia a mensagem para o WhatsApp
+  
     document.getElementById("formulario").addEventListener("submit", function(e) {
       e.preventDefault();
   
