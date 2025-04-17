@@ -174,29 +174,6 @@
 
     <p class="assinatura">🚀 Desenvolvido por Victor Aleixo • 2025</p>
 
-    <script>
-        const texto = "Seja bem-vindo ao meu portifólio";
-        let index = 0;
-        function escrever() {
-            if (index < texto.length) {
-                document.getElementById("titulo-principal").innerHTML += texto.charAt(index);
-                index++;
-                setTimeout(escrever, 100);
-            }
-        }
-        window.onload = () => {
-            escrever();
-        };
-
-        document.getElementById("formulario").addEventListener("submit", function(e) {
-            e.preventDefault();
-            const nome = document.getElementById("nome").value;
-            const email = document.getElementById("email").value;
-            const mensagem = document.getElementById("mensagem").value;
-            const texto = `Olá, me chamo ${nome}. Meu e-mail é ${email}. Mensagem: ${mensagem}`;
-            const url = `https://wa.me/5511965765717?text=${encodeURIComponent(texto)}`;
-            window.open(url, "_blank");
-        });
     </script>
 </body>
 </html>
