@@ -38,6 +38,7 @@ body {
     justify-content: center;
     list-style: none;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .menu-link {
@@ -73,6 +74,9 @@ body {
     box-shadow: 0 0 20px rgba(79,70,229,0.3);
     border-radius: 50%;
     border: 4px solid var(--vidro);
+    margin-top: 0,5px;
+    
+
 }
 
 .cabeçalho {
@@ -81,7 +85,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 3rem;
     font: 100px;
 }
 
@@ -90,9 +94,7 @@ h1 {
     color: var(--primaria);
     font-weight: bold;
     margin: 20px;
-    margin-top: 18px;
-    
-
+    margin-top: 10px; 
 }
 
 
@@ -108,15 +110,23 @@ h1 {
 }
 
 .sobre {
-    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10rem 2rem;
+    text-align: center;
+    margin-top: 10rem;
 }
+
 
 .Sobre-titulo {
     font-size: 3rem;
     color: var(--claro);
     text-align: center;
-    margin: 2rem 0;
-    margin-top: 18rem;
+    margin:0 auto;
+    margin-top: 10px;
 }
 
 .sobre-caixa {
@@ -131,8 +141,9 @@ h1 {
 }
 
 .sobre-paragrafo {
-    text-align: center;
+    text-align: justify;
     font-size: 1.2rem;
+    
 }
 
 .projetos-caixa {
@@ -149,7 +160,7 @@ h1 {
     color: var(--claro);
     text-align: center;
     margin: 2rem 0;
-    margin-top: 10rem;
+    margin-top: 30rem;
 }
 .projeto-descricao {
     font-size: 1.5rem;
@@ -193,11 +204,16 @@ h1 {
 }
 
 .contatos {
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
     max-width: 600px;
     color: #9c88bd;
     font-size: 25px;
     text-align: left;
+    justify-content: center;
+    align-items: center;
+    max-width: inherit;
+   
+
 }
 
 .contatos-titulo {
@@ -205,7 +221,7 @@ h1 {
     color: var(--claro);
     text-align: center;
     margin: 2rem 0;
-    margin-top: 10rem;
+    margin-top: 8rem;
 }
 
 .formulario-contato {
@@ -293,5 +309,9 @@ textarea:focus {
     background-color: var(--maisescuro); 
     width: 100%;
   }
+<<<<<<< HEAD
  
   
+=======
+ 
+>>>>>>> f5af2c2 (atualizando layout e responsividade)

@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Meu Portfólio</title>
+    <style>
+        .sobre,
+        .projetos,
+        .contatos {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            min-height: auto;
+            padding: 4rem 2rem;
+        }
+
+        .projeto-titulo,
+        .contatos-titulo {
+            margin-top: 2rem !important;
+        }
+
+        .cabeçalho {
+            margin-bottom: 2rem;
+        }
+    </style>
 </head>
 <body>
     <nav class="navegacao">
@@ -18,8 +37,8 @@
 
     <main id="inicio" class="cabeçalho">
         <img src="img/Imagem do WhatsApp de 2025-03-21 à(s) 23.04.41_748da800.jpg" alt="foto de victor" class="foto-perfil">
-    
         <h1 id="titulo-principal"></h1>
+<<<<<<< HEAD
 
         <script>
           const texto = "Seja bem-vindo ao meu portifólio";
@@ -39,56 +58,41 @@
         </script>
         
     
+=======
+    </main>
+>>>>>>> f5af2c2 (atualizando layout e responsividade)
 
     <section id="sobremim" class="sobre">
         <h2 class="Sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo">
-              <p>
-                Fala aí! Eu sou o Victor — apaixonado por carros, viciado em tecnologia e atualmente migrando de carreira com um único objetivo: fazer história na área tech.
-            </p>
-            <p>
-                Estou cursando Tecnologia da Informação e focado no desenvolvimento web com HTML, CSS e JavaScript. Cada linha de código representa minha transição, minha evolução e o começo de uma nova fase da minha vida profissional.
-            </p>
-            <p>
-                Aqui você vai conhecer meus projetos, minha pegada como dev e o meu plano de futuro como empreendedor digital. Sinta-se em casa!
-            </p>
-            
-                    </div>
+            <p class="sobre-paragrafo">Fala aí! Eu sou o Victor — apaixonado por carros, viciado em tecnologia e atualmente migrando de carreira com um único objetivo: fazer história na área tech.</p>
+            <p class="sobre-paragrafo">Estou cursando Tecnologia da Informação e focado no desenvolvimento web com HTML, CSS e JavaScript. Cada linha de código representa minha transição, minha evolução e o começo de uma nova fase da minha vida profissional.</p>
+            <p class="sobre-paragrafo">Aqui você vai conhecer meus projetos, minha pegada como dev e o meu plano de futuro como empreendedor digital. Sinta-se em casa!</p>
+        </div>
     </section>
 
     <section id="projetos" class="projetos">
         <h2 class="projeto-titulo">Meus Projetos</h2>
         <p class="projeto-descricao">Aqui estão alguns dos meus projetos mais recentes:</p>
         <div class="projetos-caixa">
-
             <div class="projeto-card">
                 <img src="img/image.png" alt="Projeto Investimentos" class="projeto-imagem">
                 <h3 class="info-projetos">Investimentos</h3>
                 <p class="paragrafo-projeto">Uma página com as principais tendências da economia em 2025. Descubra onde investir com segurança e inteligência.</p>
             </div>
-            <div class="projeto-card">
-              <div class="imagem-wrapper" onclick="window.location.href='erro.html'">
-                  <img src="img/nike-640x351.png" alt="Projeto Sneakers" class="projeto-imagem">
-              </div>
-              <h3 class="info-projetos">Sneakers</h3>
-              <p class="paragrafo-projeto">
-                  Página de Sneakers com os modelos que dominaram as ruas e as quadras em 2025. Dos clássicos Air Max aos lendários Jordans.
-              </p>
-          </div>
-          
-          <div class="projeto-card">
-              <div class="imagem-wrapper" onclick="window.location.href='erro.html'">
-                  <img src="img/carros.png" alt="Projeto Loja de Carros" class="projeto-imagem">
-              </div>
-              <h3 class="info-projetos">Loja de Carros</h3>
-              <p class="paragrafo-projeto">
-                  Página com os carros mais desejados de 2025. Explore opções com tecnologia de ponta e visual impressionante.
-              </p>
-          </div>
-          
+            <div class="projeto-card" onclick="window.location.href='erro.html'">
+                <img src="img/nike-640x351.png" alt="Projeto Sneakers" class="projeto-imagem">
+                <h3 class="info-projetos">Sneakers</h3>
+                <p class="paragrafo-projeto">Sneakers que dominaram 2025. Dos clássicos Air Max aos lendários Jordans.</p>
+            </div>
+            <div class="projeto-card" onclick="window.location.href='erro.html'">
+                <img src="img/carros.png" alt="Projeto Loja de Carros" class="projeto-imagem">
+                <h3 class="info-projetos">Loja de Carros</h3>
+                <p class="paragrafo-projeto">Os carros mais desejados de 2025. Alta tecnologia e design impressionante.</p>
+            </div>
         </div>
     </section>
+<<<<<<< HEAD
     <section id="contato" class="contatos">
       <h2 class="contatos-titulo">Entre em Contato</h2>
       <form class="formulario-contato" id="formulario">
@@ -139,3 +143,62 @@
     });
   </script>
   
+=======
+
+    <section id="contato" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" class="camp-form" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" class="camp-form" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem" class="camp-form" required></textarea>
+            </div>
+            <button type="submit" class="botao-enviar">Enviar para WhatsApp</button>
+        </form>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <p><strong>📞 Telefone:</strong> <a href="tel:+5511965765717">(11) 96576-5717</a></p>
+            <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/5511965765717" target="_blank">Clique para conversar</a></p>
+            <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/victor-aleixo-3027961a6" target="_blank">linkedin.com/in/victor_aleixo</a></p>
+            <p><strong>📧 E-mail:</strong> <a href="mailto:victoraleixo61@icloud.com">victoraleixo61@icloud.com</a></p>
+        </div>
+    </footer>
+
+    <p class="assinatura">🚀 Desenvolvido por Victor Aleixo • 2025</p>
+
+    <script>
+        const texto = "Seja bem-vindo ao meu portifólio";
+        let index = 0;
+        function escrever() {
+            if (index < texto.length) {
+                document.getElementById("titulo-principal").innerHTML += texto.charAt(index);
+                index++;
+                setTimeout(escrever, 100);
+            }
+        }
+        window.onload = () => {
+            escrever();
+        };
+
+        document.getElementById("formulario").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const nome = document.getElementById("nome").value;
+            const email = document.getElementById("email").value;
+            const mensagem = document.getElementById("mensagem").value;
+            const texto = `Olá, me chamo ${nome}. Meu e-mail é ${email}. Mensagem: ${mensagem}`;
+            const url = `https://wa.me/5511965765717?text=${encodeURIComponent(texto)}`;
+            window.open(url, "_blank");
+        });
+    </script>
+</body>
+</html>
+>>>>>>> f5af2c2 (atualizando layout e responsividade)
