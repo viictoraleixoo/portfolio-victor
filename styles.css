@@ -286,21 +286,21 @@ textarea:focus {
     margin-top: 4rem;
     padding: 2rem;
     align-items: flex-start;
-    background-color: var(--maisescuro); /* ou #111 */
-    color: var(--claro); /* ou #eee */
+    background-color: var(--maisescuro);
+    color: var(--claro);
     font-size: 1rem;
-    border-top: 1px solid var(--vidro); /* ou #333 */
+    border-top: 1px solid var(--vidro); 
   }
   
   .rodape a {
-    color: var(--primaria); /* ou #00ffff */
+    color: var(--primaria);
     text-decoration: none;
     margin: 0 0.5rem;
     transition: color 0.3s ease;
   }
   
   .rodape a:hover {
-    color: var(--secundaria); /* ou #ffcc00 */
+    color: var(--secundaria);
   }
   
   .assinatura {
@@ -309,9 +309,4 @@ textarea:focus {
     background-color: var(--maisescuro); 
     width: 100%;
   }
-<<<<<<< HEAD
  
-  
-=======
- 
->>>>>>> f5af2c2 (atualizando layout e responsividade)
