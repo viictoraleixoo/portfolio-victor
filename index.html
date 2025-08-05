@@ -3,202 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Meu Portfólio</title>
-    <style>
-        .sobre,
-        .projetos,
-        .contatos {
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-            min-height: auto;
-            padding: 4rem 2rem;
-        }
-
-        .projeto-titulo,
-        .contatos-titulo {
-            margin-top: 2rem !important;
-        }
-
-        .cabeçalho {
-            margin-bottom: 2rem;
-        }
-    </style>
+    <title>Victor Aleixo | Desenvolvedor de Soluções Digitais</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
-    <nav class="navegacao">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">Home</a></li>
-            <li><a href="#sobremim" class="menu-link">Sobre Mim</a></li>
-            <li><a href="#projetos" class="menu-link">Serviços</a></li>
-            <li><a href="#contato" class="menu-link">Contato</a></li>
-        </ul>
-    </nav>
+    <header class="navegacao">
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio" class="menu-link">Início</a></li>
+                <li><a href="#servicos" class="menu-link">Soluções</a></li>
+                <li><a href="#projetos" class="menu-link">Projetos</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main id="inicio" class="cabeçalho">
-        <img src="img/Imagem do WhatsApp de 2025-03-21 à(s) 23.04.41_748da800.jpg" alt="foto de victor" class="foto-perfil">
-        <h1 id="titulo-principal"></h1>
-<<<<<<< HEAD
+    <main>
+        <section id="inicio" class="hero">
+            <img src="img/sua-foto.jpg" alt="Foto de Victor Aleixo" class="foto-perfil">
+            <div class="hero-texto">
+                <h1>Victor Aleixo</h1>
+                <p class="hero-headline">Transformo ideias em soluções digitais — do design ao código, com foco em automação e resultados.</p>
+            </div>
+            <div class="hero-sociais">
+                <a href="https://www.linkedin.com/in/victor-aleixo-3027961a6" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/viictoraleixoo" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
 
-        <script>
-          const texto = "Seja bem-vindo ao meu portifólio";
-          let index = 0;
-        
-          function escrever() {
-            if (index < texto.length) {
-              document.getElementById("titulo-principal").innerHTML += texto.charAt(index);
-              index++;
-              setTimeout(escrever, 100); 
-            }
-          }
-        
-          window.onload = () => {
-            escrever();
-          };
-        </script>
-        
-    
-=======
+        <section id="servicos" class="secao-padrao">
+            <h2 class="secao-titulo">Como posso ajudar seu negócio</h2>
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Sistemas Internos e Dashboards</h3>
+                    <p>Desenvolvo sistemas sob medida para otimizar seus processos, reduzir o retrabalho e centralizar suas operações com painéis de controle intuitivos.</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-object-group"></i>
+                    <h3>Sites e Landing Pages</h3>
+                    <p>Crio a porta de entrada digital da sua marca com sites institucionais e landing pages de alta conversão, focados na experiência do usuário.</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Automação com APIs e IA</h3>
+                    <p>Integro ferramentas, automatizo tarefas repetitivas e conecto seu sistema a IAs para que sua equipe foque no que realmente importa.</p>
+                </div>
+                <div class="servico-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Scripts e Bots Inteligentes</h3>
+                    <p>Desenvolvo scripts e bots para automatizar desde checklists complexos até o atendimento via WhatsApp, garantindo eficiência e precisão.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="secao-padrao">
+            <h2 class="secao-titulo">Projetos com Foco em Resultado</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <div class="projeto-texto">
+                        <h3>🧠 Módulo SAC - MedNet</h3>
+                        <div class="projeto-detalhes">
+                            <p><strong>O Problema:</strong> Atendimento ao cliente descentralizado, gerando retrabalho e demora nas respostas.</p>
+                            <p><strong>A Solução:</strong> Criei um sistema de atendimento (SAC) interno com interface intuitiva, FAQ dinâmico e automação de respostas.</p>
+                            <p><strong>O Impacto:</strong> Redução de 40% no retrabalho da equipe de suporte e agilidade na resolução de chamados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="projeto-texto">
+                        <h3>🤖 Automação de WhatsApp com IA</h3>
+                        <div class="projeto-detalhes">
+                            <p><strong>O Problema:</strong> Uma empresa precisava qualificar leads recebidos pelo WhatsApp 24/7 sem aumentar a equipe.</p>
+                            <p><strong>A Solução:</strong> Integrei a API da OpenAI ao WhatsApp para criar um bot que entende, qualifica e agenda reuniões com clientes em potencial.</p>
+                            <p><strong>O Impacto:</strong> Aumento de 30% na taxa de agendamento de reuniões e disponibilidade de atendimento em tempo integral.</p>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+        </section>
+
+        <section id="depoimentos" class="secao-padrao">
+            <h2 class="secao-titulo">O que dizem sobre o trabalho</h2>
+            <div class="depoimento-card">
+                <blockquote>
+                    <p>"O sistema que o Victor criou agilizou nosso processo interno e reduziu 40% do retrabalho. Superou a expectativa."</p>
+                </blockquote>
+                <cite>– Responsável Técnico (MedNet)</cite>
+            </div>
+        </section>
+
+        <section id="stack" class="secao-padrao">
+            <h2 class="secao-titulo">Tecnologias e Ferramentas</h2>
+            <div class="stack-grid">
+                <div class="stack-item"><span>HTML5</span></div>
+                <div class="stack-item"><span>CSS3</span></div>
+                <div class="stack-item"><span>JavaScript</span></div>
+                <div class="stack-item"><span>Python</span></div>
+                <div class="stack-item"><span>MySQL</span></div>
+                <div class="stack-item"><span>API REST</span></div>
+                <div class="stack-item"><span>OpenAI API</span></div>
+                <div class="stack-item"><span>Git/GitHub</span></div>
+                <div class="stack-item"><span>VS Code</span></div>
+            </div>
+        </section>
     </main>
->>>>>>> f5af2c2 (atualizando layout e responsividade)
 
-    <section id="sobremim" class="sobre">
-        <h2 class="Sobre-titulo">Sobre Mim</h2>
-        <div class="sobre-caixa">
-            <p class="sobre-paragrafo">Fala aí! Eu sou o Victor — apaixonado por carros, viciado em tecnologia e atualmente migrando de carreira com um único objetivo: fazer história na área tech.</p>
-            <p class="sobre-paragrafo">Estou cursando Tecnologia da Informação e focado no desenvolvimento web com HTML, CSS e JavaScript. Cada linha de código representa minha transição, minha evolução e o começo de uma nova fase da minha vida profissional.</p>
-            <p class="sobre-paragrafo">Aqui você vai conhecer meus projetos, minha pegada como dev e o meu plano de futuro como empreendedor digital. Sinta-se em casa!</p>
-        </div>
-    </section>
-
-    <section id="projetos" class="projetos">
-        <h2 class="projeto-titulo">Meus Projetos</h2>
-        <p class="projeto-descricao">Aqui estão alguns dos meus projetos mais recentes:</p>
-        <div class="projetos-caixa">
-            <div class="projeto-card">
-                <img src="img/image.png" alt="Projeto Investimentos" class="projeto-imagem">
-                <h3 class="info-projetos">Investimentos</h3>
-                <p class="paragrafo-projeto">Uma página com as principais tendências da economia em 2025. Descubra onde investir com segurança e inteligência.</p>
-            </div>
-            <div class="projeto-card" onclick="window.location.href='erro.html'">
-                <img src="img/nike-640x351.png" alt="Projeto Sneakers" class="projeto-imagem">
-                <h3 class="info-projetos">Sneakers</h3>
-                <p class="paragrafo-projeto">Sneakers que dominaram 2025. Dos clássicos Air Max aos lendários Jordans.</p>
-            </div>
-            <div class="projeto-card" onclick="window.location.href='erro.html'">
-                <img src="img/carros.png" alt="Projeto Loja de Carros" class="projeto-imagem">
-                <h3 class="info-projetos">Loja de Carros</h3>
-                <p class="paragrafo-projeto">Os carros mais desejados de 2025. Alta tecnologia e design impressionante.</p>
+    <footer id="contato" class="rodape">
+        <div class="cta-container">
+            <h2>Bora tirar seu projeto do papel?</h2>
+            <p>Me chame para uma conversa. Estou pronto para entender seu desafio e desenhar a melhor solução digital.</p>
+            <div class="cta-botoes">
+                <a href="https://wa.me/5511965765717?text=Olá,%20Victor!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" class="botao-cta whatsapp">
+                    <i class="fab fa-whatsapp"></i> Me chama no WhatsApp
+                </a>
+                <a href="mailto:victoraleixo61@icloud.com" class="botao-cta email">
+                    <i class="fas fa-envelope"></i> Me manda um e-mail
+                </a>
             </div>
         </div>
-    </section>
-<<<<<<< HEAD
-    <section id="contato" class="contatos">
-      <h2 class="contatos-titulo">Entre em Contato</h2>
-      <form class="formulario-contato" id="formulario">
-    
-        <div class="form-group">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" placeholder="Digite seu nome" class="camp-form" required>
-        </div>
-    
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" placeholder="Digite seu e-mail" class="camp-form" required>
-        </div>
-    
-        <div class="form-group">
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" placeholder="Digite sua mensagem" class="camp-form" required></textarea>
-        </div>
-    
-        <button type="submit" class="botao-enviar">Enviar para WhatsApp</button>
-      </form>
-  </section>
-  
-  <footer class="rodape">
-    <div class="rodape-container">
-      <p><strong>📞 Telefone:</strong> <a href="tel:+5511965765717">(11) 96576-5717</a></p>
-      <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/5511965765717" target="_blank">Clique para conversar</a></p>
-      <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/victor-aleixo-3027961a6" target="_blank">linkedin.com/in/victor_aleixo</a></p>
-      <p><strong>📧 E-mail:</strong> <a href="mailto:victoraleixo61@icloud.com">victoraleixo61@icloud.com</a></p>
-    </div>
-  </footer>
-  
-  <p class="assinatura">🚀 Desenvolvido por Victor Aleixo • 2025</p>
-
-  <script>
-  
-    document.getElementById("formulario").addEventListener("submit", function(e) {
-      e.preventDefault();
-  
-      const nome = document.getElementById("nome").value;
-      const email = document.getElementById("email").value;
-      const mensagem = document.getElementById("mensagem").value;
-  
-      const texto = `Olá, me chamo ${nome}. Meu e-mail é ${email}. Mensagem: ${mensagem}`;
-      const url = `https://wa.me/5511965765717?text=${encodeURIComponent(texto)}`;
-  
-      window.open(url, "_blank");
-    });
-  </script>
-  
-=======
-
-    <section id="contato" class="contatos">
-        <h2 class="contatos-titulo">Entre em Contato</h2>
-        <form class="formulario-contato" id="formulario">
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome" class="camp-form" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail" class="camp-form" required>
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" placeholder="Digite sua mensagem" class="camp-form" required></textarea>
-            </div>
-            <button type="submit" class="botao-enviar">Enviar para WhatsApp</button>
-        </form>
-    </section>
-
-    <footer class="rodape">
-        <div class="rodape-container">
-            <p><strong>📞 Telefone:</strong> <a href="tel:+5511965765717">(11) 96576-5717</a></p>
-            <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/5511965765717" target="_blank">Clique para conversar</a></p>
-            <p><strong>💼 LinkedIn:</strong> <a href="https://www.linkedin.com/in/victor-aleixo-3027961a6" target="_blank">linkedin.com/in/victor_aleixo</a></p>
-            <p><strong>📧 E-mail:</strong> <a href="mailto:victoraleixo61@icloud.com">victoraleixo61@icloud.com</a></p>
+        <div class="assinatura">
+            <p>🚀 Desenhado e desenvolvido por Victor Aleixo • 2025</p>
         </div>
     </footer>
 
-    <p class="assinatura">🚀 Desenvolvido por Victor Aleixo • 2025</p>
-
-    <script>
-        const texto = "Seja bem-vindo ao meu portifólio";
-        let index = 0;
-        function escrever() {
-            if (index < texto.length) {
-                document.getElementById("titulo-principal").innerHTML += texto.charAt(index);
-                index++;
-                setTimeout(escrever, 100);
-            }
-        }
-        window.onload = () => {
-            escrever();
-        };
-
-        document.getElementById("formulario").addEventListener("submit", function(e) {
-            e.preventDefault();
-            const nome = document.getElementById("nome").value;
-            const email = document.getElementById("email").value;
-            const mensagem = document.getElementById("mensagem").value;
-            const texto = `Olá, me chamo ${nome}. Meu e-mail é ${email}. Mensagem: ${mensagem}`;
-            const url = `https://wa.me/5511965765717?text=${encodeURIComponent(texto)}`;
-            window.open(url, "_blank");
-        });
-    </script>
 </body>
 </html>
->>>>>>> f5af2c2 (atualizando layout e responsividade)
